@@ -5,6 +5,30 @@
       "book": "grokking algorithms",
       "image-url": "https://images.manning.com/360/480/resize/book/3/0b325da-eb26-4e50-8a2a-46042c647083/Bhargava-Algorithms_hires.png",
       "author": "Aditya"
+    },
+    {
+      "book": {},
+      "imageurl": {},
+      "author": {},
+      "id": 2
+    },
+    {
+      "book": {},
+      "imageurl": {},
+      "author": {},
+      "id": 3
+    },
+    {
+      "book": {},
+      "imageurl": {},
+      "author": {},
+      "id": 4
+    },
+    {
+      "book": "Data structures",
+      "imageurl": "https://media.istockphoto.com/id/1270917708/photo/national-pension-scheme-text-on-sticky-notes-isolated-on-office-desk.jpg?s=612x612&w=0&k=20&c=DFBtPQnNL-AomUrosRdMoiBJ1VBbrHBARKaAG1TVm4g=",
+      "author": "Mohamed",
+      "id": 5
     }
   ]
 }
