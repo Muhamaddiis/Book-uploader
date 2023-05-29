@@ -1,14 +1,27 @@
 const formContent = document.getElementById('addBook');
 const uploadbtn = document.getElementById('upload');
-
-//     // fetch('http://localhost:3000/books')
-//     //     .then(response => {
-//     //         response.json()
-//     //             .then(data => {
-//     //                 console.log(data);
-//     //             });
-//     //     });
-console.log("hello");
+const books = document.getElementById('books')
+const table = document.getElementById('table')
+    fetch('http://localhost:3000/books')
+        .then(response => {
+            response.json()
+                .then(data => {
+                    console.log(data);
+                    data.forEach(book => {
+                        let row = table.insertRow()
+                        let title = row.insertCell([0]);
+                        let author = row.insertCell([1]);
+                        let image = row.insertCell([2])
+                        title.innerHTML = book.book
+                        author.innerHTML = book.author
+                        image.innerHTML = `<img src=${book['image-url']}>`
+                        console.log(book)
+                    //     books.innerHTML +=
+                    });
+                });
+        });
+        
+// console.log("hello");
 formContent.addEventListener('submit', event => {
     event.preventDefault();
     const addBook = document.getElementById('addBook');
@@ -32,12 +45,11 @@ console.log(formContent.value);
         .then(response => {
             response.json()
                 .then(data => {
-                    addBook.innerHTML = data
-                    console.log(data);
+                    // addBook.innerHTML = data
+                    // console.log(data);
                 });
         });
 });
-
 
 
 
