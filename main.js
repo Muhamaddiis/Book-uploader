@@ -11,7 +11,7 @@ const table = document.getElementById('table')
                         let row = table.insertRow()
                         let title = row.insertCell([0]);
                         let author = row.insertCell([1]);
-                        let image = row.insertCell([2])
+                        let image = row.insertCell([2]);
                         title.innerHTML = book.book
                         author.innerHTML = book.author
                         image.innerHTML = `<img src=${book['image-url']}>`

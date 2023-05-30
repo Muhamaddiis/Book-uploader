@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: #5a5a5a;
@@ -12,24 +13,45 @@ body{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
-
+#books {
+    color: #b4b4b6;
+}
 h1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    color: #543d2e;
 }
-
+#upload {
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: #ffff;
+    background-color: #543d2e;
+    border-radius: 30px;
+    border-color: transparent;
+    cursor: pointer;
+}
 #addBook {
-    margin-top: 3rem;
+    gap: 10px;
     display: flex;
-    justify-content: center;   
+    flex-direction: column;
+    align-items: center; 
 }
-
+#addBook input{
+    width: 250%;
+    height: 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    border: 1px solid #543d2e;
+}
+#addBook label{
+    color: #543d2e;
+    font-weight: 500;
+}
 table {
     border: 1px solid black;
-    background-color: #d3d8d6ef;
+    background-color: #ffffffef;
   }
 
 img {
