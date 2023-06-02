@@ -1,6 +1,5 @@
 const formContent = document.getElementById('addBook');
 const uploadbtn = document.getElementById('upload');
-const books = document.getElementById('books')
 const table = document.getElementById('table')
     fetch('http://localhost:3000/books')
         .then(response => {
@@ -14,17 +13,16 @@ const table = document.getElementById('table')
                         let image = row.insertCell([2]);
                         title.innerHTML = book.book
                         author.innerHTML = book.author
-                        image.innerHTML = `<img src=${book['image-url']}>`
+                        image.innerHTML = `<img src=${book['imageurl']}>`
                         console.log(book)
-                    //     books.innerHTML +=
+                    
                     });
                 });
         });
         
-// console.log("hello");
+
 formContent.addEventListener('submit', event => {
     event.preventDefault();
-    const addBook = document.getElementById('addBook');
     const book = document.getElementById('book-name')   ;
     const imageUrl = document.getElementById('image-url');
     const author = document.getElementById('author');
@@ -45,8 +43,7 @@ console.log(formContent.value);
         .then(response => {
             response.json()
                 .then(data => {
-                    // addBook.innerHTML = data
-                    // console.log(data);
+                    console.log(data);
                 });
         });
 });
