@@ -1,4 +1,10 @@
 {
   "books": [
+    {
+      "book": "Game of Thrones",
+      "imageurl": "https://images.manning.com/360/480/resize/book/b/b395c07-ef07-4b3b-97dd-b7c05fe75ec8/Groeneveld-HI.png",
+      "author": "George R. R. Martin",
+      "id": 1
+    }
   ]
 }

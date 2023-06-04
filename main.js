@@ -1,7 +1,7 @@
 const formContent = document.getElementById('addBook');
 const uploadbtn = document.getElementById('upload');
 const table = document.getElementById('table')
-    fetch('http://localhost:3000/books')
+    fetch('https://muhamaddiis.github.io/Book-api/')
         .then(response => {
             response.json()
                 .then(data => {
@@ -29,7 +29,7 @@ formContent.addEventListener('submit', event => {
     
 console.log(formContent.value);
 
-    fetch('http://localhost:3000/books', {
+    fetch('https://muhamaddiis.github.io/Book-api/', {
         method: 'POST',
         headers: {
             "content-type": "application/json"
